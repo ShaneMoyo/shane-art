@@ -1,0 +1,73 @@
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+@import "../../node_modules/bulma/sass/utilities/functions";
+
+$primary: #f69f98;
+$danger:  #FF0000;
+$warning: #f5d6b8;
+$success: #acb5a0;
+$info: #8ab6c6;
+$red: #FF0000;
+html {
+  scroll-behavior: smooth;
+}
+.navbar-burger {
+  span {
+    color: #FFF;
+  }
+}
+.fadeOut {
+    -webkit-animation-name: slideOutLeft;
+    animation-name: slideOutLeft;
+    -webkit-animation-duration: 5s;
+    animation-duration: 0.3s !important;
+}
+
+.hero.landing {
+  background: linear-gradient(
+  rgba(255, 255, 255, 1),
+  rgba(255, 255, 255, 0.3),
+
+
+
+  rgba(0, 0, 0, 0.3),
+  rgba(0, 0, 0, 1)
+    ),url(../img/waves.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.hero.main {
+  background-color: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.box.black{
+  background-color: #000;
+  border: 2px solid #fff;
+}
+
+.title {
+  color: #fff !important;
+}
+
+.subtitle {
+  color: #fff !important;
+}
+.navbar-menu{
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.navbar {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0;
+  background: linear-gradient(black, black, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)) !important;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.4) !important;
+
+}
+@import "../../node_modules/bulma/bulma";
