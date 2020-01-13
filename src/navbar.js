@@ -4,7 +4,7 @@ import Icon from '@mdi/react'
 
 function navbar(props) {
 
-  let navClass = "navbar animated fadeIn";
+  let navClass = "navbar is-fixed-top animated fadeIn";
 
   return (
     <nav class={navClass}>
@@ -12,7 +12,7 @@ function navbar(props) {
 
         <div class="navbar-brand">
           <a class="navbar-item" href="../">
-            <p class="title has-text-white large">S. Moyo</p>
+            <p class="title large">S. Moyo</p>
           </a>
           <span class={props.active ? "navbar-burger  is-active burger" : "navbar-burger  burger"} data-target="navbarMenu" onClick={() => props.isActive(!props.active)}>
               <span></span>
@@ -23,46 +23,26 @@ function navbar(props) {
         <div id="navbarMenu" class={props.active ? "navbar-menu is-active animated fadeIn" : "navbar-menu"}>
           <div class="navbar-end">
             <span class="navbar-item">
-              <a class="button is-white is-outlined" href="#experience" onClick={() => props.isActive(!props.active)}>
-              <span class="icon is-large is-pulled-left" >
-                <Icon path={mdiAccountBadgeHorizontalOutline}
-                size={2}
-                color="white"
-                />
-                </span>
-                <span>Experience</span>
+              <a class="subtitle is-black is-outlined" href="#selected" onClick={() => props.isActive(!props.active)}>
+
+                <span>Selected Work</span>
               </a>
             </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined" href="#projects" onClick={() => props.isActive(!props.active)}>
-                  <span class="icon">
-                    <Icon path={mdiLightbulbOnOutline}
-                      size={2}
-                      color="white"
-                    />
-                  </span>
-                  <span>Projects</span>
+                <a class="subtitle is-black is-outlined" href="#projects" onClick={() => props.isActive(!props.active)}>
+
+                  <span>Sketch Book</span>
                 </a>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined" href="#education" onClick={() => props.isActive(!props.active)}>
-                  <span class="icon">
-                    <Icon path={mdiSchool}
-                      size={2}
-                      color="white"
-                    />
-                  </span>
-                  <span>Education</span>
+                <a class="subtitle is-black is-outlined" href="#education" onClick={() => props.isActive(!props.active)}>
+
+                  <span>Contact</span>
                 </a>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined" href="#about" onClick={() => props.isActive(!props.active)}>
-                  <span class="icon">
-                    <Icon path={mdiHumanHandsup}
-                      size={2}
-                      color="white"
-                    />
-                  </span>
+                <a class="subtitle is-black is-outlined" href="#about" onClick={() => props.isActive(!props.active)}>
+
                   <span>About Me</span>
                 </a>
               </span>
